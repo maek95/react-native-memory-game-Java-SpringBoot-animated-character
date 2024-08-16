@@ -1,6 +1,6 @@
 # Memory Game
 
-Welcome to my Memory Game - inspired by the Maven encounter in the renowned ARPG game Path of Exile. My game is a simple and engaging game built with React Native where the player must remember and replicate the order in which the circle's slices flash purple.
+Welcome to my Memory Game - inspired by the Maven encounter in the renowned ARPG game Path of Exile. My game is a simple and engaging game built with React Native where the player must remember and replicate the order in which the circle's slices flash purple. The player replicates the order by clicking on a slice which then moves the character, if it is correct it flashes green, if it is wrong it flashes red and causes a 1 second penalty.
 
 ## Table of Contents
 
@@ -17,9 +17,9 @@ This project is built using React Native, Expo Router, and Java Spring Boot. The
 
 ## Gameplay
 
-- **Objective**: Remember the sequence in which the circle's slices flash purple.
-- **Time Limit**: You have five seconds to complete the sequence.
-- **Penalty**: Pressing a wrong slice results in a 1-second penalty.
+- **Objective**: Remember the sequence in which the circle's slices flash purple. 
+- **Time Limit**: You have five seconds to complete the sequence, click to move the character to the respsective slices.
+- **Penalty**: Pressing a wrong slice results in a 1-second penalty when the character arrives there.
 - **Game Over**: If the timer reaches zero, the player loses.
 - **Restart**: Players can quickly start over or select a new difficulty level after losing.
 
@@ -27,7 +27,7 @@ This project is built using React Native, Expo Router, and Java Spring Boot. The
 
 - (Frontend) React Native and Expo Router integration
 - (Backend) Java Spring Boot and an H2 database
-- SVG-based game design with animations
+- SVG-based game design with animations (dynamic color flashes and moving character)
 - Time-based gameplay with penalties for mistakes
 - Difficulty selection for varying challenges
 
@@ -106,6 +106,7 @@ The backend is powered by Java Spring Boot and allows the user to create an acco
 Work in progress:
 
 - Further enhance the backend by building an SQL-database. Supposedly easy to implement if I use PostgreSQL since H2 follows similar structure?
+- Store statistics about the user's games that they can access on their profile page. For instance how many games they have played on Hard Difficulty and how many wins/losses.
 - Potentially let the user add custom difficulties.
 
 Stay tuned for updates!
